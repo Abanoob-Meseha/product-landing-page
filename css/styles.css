@@ -1,0 +1,140 @@
+/* Google fonts used (Alkatra - Kanit) */
+@import url('https://fonts.googleapis.com/css2?family=Alkatra&family=Kanit&family=Varela+Round&display=swap');
+
+body{
+    background-color: #000000;
+    color: white;
+    font-family:  'Kanit','Alkatra' ;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #31313100;
+    color: #fff;
+    padding: 0% 1vw;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+  }
+  .scrolled {
+    background-color: rgba(0, 0, 0, 0.699);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.295); /* optional: add a shadow */
+  }
+  
+  nav label {
+    font-size: 2rem;
+    cursor: pointer;
+  }
+  
+  nav ul {
+    display: flex;
+    list-style: none;
+    align-items: center;
+    margin: 0 2vw;
+    padding: 0;
+    font-size: larger;
+  }
+  nav ul li a:hover{
+    color: #EB661B;
+    text-decoration: underline;
+  }
+  nav .logo-img{
+    width: 8vw;
+    height: 10vh;
+  }
+  nav .nav-logo{
+    display: flex;
+    align-items: center;
+  }
+  nav .nav-logo .logo-label{
+    font-family: 'Varela Round';
+    padding: 0%;
+    margin: 0%;
+  }
+  nav ul li {
+    margin-left: 1rem;
+  }
+  
+  nav ul li a {
+    color: #fff;
+    text-decoration: none;
+  }
+  .btn {
+    -webkit-border-radius: 28;
+    -moz-border-radius: 28;
+    border-radius: 28px;
+    font-family: Arial;
+    color: #ffffff;
+    font-size: 20px;
+    background: #eb631a;
+    padding: 10px 20px 10px 20px;
+    text-decoration: none;
+  }
+  
+  .btn:hover {
+    background: #fa691b;
+    text-decoration: none;
+  }
+  .menu-btn{
+    display: none;
+  }
+
+  /* Sections */
+  .banner-section{
+    margin-top: 10vh;
+    text-align: center;
+  }
+  .banner-section .slogan{
+    font-size: 80px;
+    font-weight: bolder;
+    color: #EB661B;
+    margin: 3vh auto 0vh;
+  }
+  footer{
+    text-align: center;
+  }
+  /* Media Query for Responsive Nav */
+  @media screen and (max-width: 500px) {
+    nav {
+      flex-direction: column;
+      align-items: center;
+    }
+      
+    nav ul {
+      flex-direction: column;
+      align-items: center;
+      width: 100%;
+      display: none;
+      margin-top: 1rem;
+    }
+    
+    nav ul li {
+      margin: 0;
+      width: 100%;
+      text-align: left;
+      background-color: #000000;
+    }
+    nav ul li :hover{
+        background-color: #EB661B;
+        color: #fff;
+      }
+    nav ul li a:hover{
+    color: #fff;
+    text-decoration: none;
+    } 
+    nav ul li a {
+      padding: 1rem;
+      width: 100%;
+      display: block;
+      border-bottom: 1px solid #fff;
+    }
+    .menu-btn{
+        display: flex;
+        margin-left: 4vw;
+    }
+    
+  }
+  
