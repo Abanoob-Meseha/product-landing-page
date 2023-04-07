@@ -3,4 +3,4 @@
 ## You can try it from the below link:
 ### https://abanoob-meseha.github.io/product-landing-page/
 ### here is a sample preview video
-![Uploading product landing page.gif…]()
+![product landing page](https://user-images.githubusercontent.com/61358574/230679588-d13d3ade-4a2a-4a3d-abf5-8482842c164f.gif)
