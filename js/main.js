@@ -1,6 +1,9 @@
 const menuBtn = document.querySelector('.menu-btn');
 const menuList = document.querySelector('nav ul');
 const navbar = document.querySelector('nav')
+const bannerImg = document.querySelector('.banner-img')
+const collectionImgs = document.querySelectorAll('.collection_card') 
+console.log(collectionImgs[0].id)
 
 function setDisplayProperty() {
     if (window.innerWidth > 768) {
@@ -35,3 +38,11 @@ menuBtn.addEventListener('click', function() {
       navbar.classList.remove('scrolled');
     }
   });
+
+  // make collection images clickable 
+  for(let i=0;i<collectionImgs.length;i++){
+    collectionImgs[i].addEventListener('click' , ()=>{
+      bannerImg.src = `assets/images/bracelets/png/${collectionImgs[i].id}.png`
+    })
+  }
+  

@@ -7,9 +7,10 @@
     <title>Medical ID Bracelet</title>
     <link rel="shortcut icon" href="assets/images/Bracelet_LOGO.png" type="image/x-icon">
     <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
-    <nav>
+    <nav class="fill">
         <div class="nav-logo">
             <img class="logo-img" src="assets/images/Bracelet_LOGO.png" alt="LOGO">
             <h1 class="logo-label">MEDICAL ID BRACELET</h1>
@@ -17,21 +18,64 @@
         </div>
         
         <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Contact</a></li>
+            <li><a href="#banner">Home</a></li>
+            <li><a href="#collections">collections</a></li>
+            <li><a href="#contact">Contact</a></li>
             <li><button class="btn">Order Now</button></li>
         </ul>
     </nav>
     <!-- Banner Section -->
-    <section class="banner-section">
-        <h1 class="slogan">Stay Safe, Informed and Stylish</h1>
-        <img src="assets/images/bracelets/blue.png" alt="bracelet image">
+    <section id="banner">
+        <div class="banner-section">
+            <h1 class="slogan">Stay Safe, Informed and Stylish</h1>
+            <img src="assets/images/bracelets/png/black.png" class="banner-img" alt="bracelet image">
+        </div>
+        
     </section>
-    <section></section>
-    <section></section>
+    <!-- products collection section -->
+    <section id="collections">
+        <h1>Collections</h1>
+        <div class="collection">
+            <div class="collection_card" id="blue" style="background-image: url('./assets/images/bracelets/blue.jpg');"> <h1>BLUE</h1> </div>
+            <div class="collection_card" id="black" style="background-image: url('./assets/images/bracelets/black.jpg');"> <h1>BLACK</h1> </div>
+            <div class="collection_card" id="gray" style="background-image: url('./assets/images/bracelets/gray.jpg');"> <h1>GRAY</h1> </div>
+            <div class="collection_card" id="white" style="background-image: url('./assets/images/bracelets/white.jpg');"> <h1>GRAY2</h1> </div>
+            <div class="collection_card" id="pink" style="background-image: url('./assets/images/bracelets/pink.jpg');"> <h1>PINK</h1> </div>
+        </div>   
+    </section>
+    <!-- video section -->
+    <section id="video">
+        <h1>Live the experience</h1>
+        <iframe class="bracelet_video" src="https://www.youtube.com/embed/NFae1EtBqts?loop=1&controls=1&autoplay=1&mute=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    </section>
+    <hr>
     <footer>
-        <h1>2023&copy; Abanoub Meseha</h1>
+        <div class="footer-section">
+            <div>
+                <h1>Download APP</h1>
+                <a href=""><img class="app_download-img" src="assets/images/svg/google-play.svg" alt="google-play"></a>
+                <a href=""><img class="app_download-img" src="assets/images/svg/app-store.svg" alt="app-store"></a>
+            </div>
+            <div>
+                <h1>Join our mailing list</h1>
+                <div>
+                    <input type="text" class="form__field" placeholder="Email" name="email" id='email' required />
+                    <button class="btn" style="margin-top: 1vh;">Subscribe</button>
+                </div>
+            </div>
+            <div class="contact-us" id="contact">
+                <h1>Contact us</h1>
+                <div>
+                    <ul>
+                        <li><a href="#" class="fa fa-facebook"></a><a href="" class="social_label"> Facebook</a> </li>
+                        <li><a href="#" class="fa fa-twitter"></a><a href="" class="social_label"> Twiter</a> </li>
+                        <li><a href="#" class="fa fa-instagram"></a><a href="" class="social_label"> Instagram</a> </li>
+                        <li><a href="#" class="fa fa-linkedin"></a><a href="" class="social_label"> LinkedIn</a> </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <h3 style="background-color: #eb631a;">Copywrites &copy;2023 Abanoub Meseha</h3>
     </footer>
     <script src="js/main.js"></script>
 </body>

@@ -1,140 +1,339 @@
-/* Google fonts used (Alkatra - Kanit) */
 @import url('https://fonts.googleapis.com/css2?family=Alkatra&family=Kanit&family=Varela+Round&display=swap');
-
-body{
-    background-color: #000000;
-    color: white;
-    font-family:  'Kanit','Alkatra' ;
+/* Google fonts used (Alkatra - Kanit) */
+ body {
+	 background-color: #000;
+	 color: white;
+	 font-family: 'Kanit', 'Alkatra';
+	 margin: 0;
+	 padding: 0;
+	 text-align: center;
 }
-
-nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: #31313100;
-    color: #fff;
-    padding: 0% 1vw;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-  }
-  .scrolled {
-    background-color: rgba(0, 0, 0, 0.699);
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.295); /* optional: add a shadow */
-  }
-  
-  nav label {
-    font-size: 2rem;
-    cursor: pointer;
-  }
-  
-  nav ul {
-    display: flex;
-    list-style: none;
-    align-items: center;
-    margin: 0 2vw;
-    padding: 0;
-    font-size: larger;
-  }
-  nav ul li a:hover{
-    color: #EB661B;
-    text-decoration: underline;
-  }
-  nav .logo-img{
-    width: 8vw;
+ nav {
+	 display: flex;
+	 justify-content: space-between;
+	 align-items: center;
+	 background-color: #313131 0;
+	 color: #fff;
+	 padding: 0% 1vw;
+	 position: fixed;
+	 top: 0;
+	 left: 0;
+	 width: 100%;
+}
+ .scrolled {
+	 background-color: rgba(0, 0, 0, 0.699);
+	 box-shadow: 0 2px 4px rgba(0, 0, 0, 0.295);
+	/* optional: add a shadow */
+}
+ nav label {
+	 font-size: 2rem;
+	 cursor: pointer;
+}
+ nav ul {
+	 display: flex;
+	 list-style: none;
+	 align-items: center;
+	 margin: 0 2vw;
+	 padding: 0;
+	 font-size: larger;
+}
+ nav .logo-img {
+	 width: 8vw;
+	 height: 10vh;
+}
+ nav .nav-logo {
+	 display: flex;
+	 align-items: center;
+}
+ nav .nav-logo .logo-label {
+	 font-family: 'Varela Round';
+	 padding: 0%;
+	 margin: 0%;
+}
+ nav ul li {
+	 margin-left: 1rem;
+}
+ nav ul li a {
+	 color: #fff;
+	 text-decoration: none;
+	 transition: 1s;
+}
+ nav ul:hover li a {
+	 opacity: 0.2;
+	 filter: blur(5px);
+}
+ nav ul li a:hover {
+	 position: relative;
+	 color: #eb661b;
+	 transform: scale(2);
+	 opacity: 1;
+	 filter: blur(0);
+}
+ .btn {
+	 -webkit-border-radius: 28;
+	 -moz-border-radius: 28;
+	 border-radius: 28px;
+	 font-family: Arial;
+	 color: #fff;
+	 font-size: 20px;
+	 background: #eb631a;
+	 padding: 10px 20px 10px 20px;
+	 text-decoration: none;
+}
+ .btn:hover {
+	 background: #fa691b;
+	 text-decoration: none;
+}
+ .menu-btn {
+	 display: none;
+	 margin-right: 1vw;
+}
+/* banner section */
+ .banner-section {
+	 margin-top: 10vh;
+	 text-align: center;
+}
+ .banner-section .slogan {
+	 font-size: 80px;
+	 font-weight: bolder;
+	 color: #eb661b;
+	 margin: 3vh auto 0vh;
+}
+ .banner-img {
+	 width: 50%;
+}
+/* collection section */
+ .collection {
+	 padding: 1vh 5vh;
+	 display: flex;
+	 justify-content: center;
+	 height: 50vh;
+	 gap: 1rem;
+}
+ .collection_card {
+	 flex: 1;
+	 border-radius: 1rem;
+	 background-position: center;
+	 background-repeat: no-repeat;
+	 background-size: auto 100%;
+	 transition: all 0.8s cubic-bezier(0.25, 0.4, 0.45, 1.4);
+}
+ .collection_card h1 {
+	 width: max-content;
+	 color: #eb661b;
+	 font-weight: bolder;
+	 background-color: #3a3a3a;
+}
+ .collection_card:hover {
+	 flex: 5;
+	 transform: scale(1.1);
+}
+ .collection_card:hover h1 {
+	 color: #000;
+	 background-color: #fff;
+	 margin-left: 8vw;
+}
+/* video section */
+ .bracelet_video {
+	 width: 90vw;
+	 height: 60vh;
+}
+/* footer */
+ footer {
+	 text-align: center;
+	 background-color: #000000;
+	 margin-bottom: auto 0 0 0;
+	 font-size: medium;
+	 margin-bottom: -3vh;
+}
+ .footer-section {
+	 display: flex;
+	 justify-content: center;
+     gap: 8vw;
+}
+.contact-us ul{
+    text-align: left;
+}
+.app_download-img{
+    width: 6vw;
     height: 10vh;
-  }
-  nav .nav-logo{
-    display: flex;
-    align-items: center;
-  }
-  nav .nav-logo .logo-label{
-    font-family: 'Varela Round';
-    padding: 0%;
-    margin: 0%;
-  }
-  nav ul li {
-    margin-left: 1rem;
-  }
-  
-  nav ul li a {
-    color: #fff;
+    margin: 1vh;
+    background-color: #eb631a;
+    border-radius: 10%;
+}
+.social_label{
     text-decoration: none;
-  }
-  .btn {
-    -webkit-border-radius: 28;
-    -moz-border-radius: 28;
-    border-radius: 28px;
-    font-family: Arial;
-    color: #ffffff;
-    font-size: 20px;
-    background: #eb631a;
-    padding: 10px 20px 10px 20px;
-    text-decoration: none;
-  }
-  
-  .btn:hover {
-    background: #fa691b;
-    text-decoration: none;
-  }
-  .menu-btn{
-    display: none;
-  }
-
-  /* Sections */
-  .banner-section{
-    margin-top: 10vh;
-    text-align: center;
-  }
-  .banner-section .slogan{
-    font-size: 80px;
-    font-weight: bolder;
-    color: #EB661B;
-    margin: 3vh auto 0vh;
-  }
-  footer{
-    text-align: center;
-  }
-  /* Media Query for Responsive Nav */
-  @media screen and (max-width: 500px) {
-    nav {
-      flex-direction: column;
-      align-items: center;
-    }
-      
-    nav ul {
-      flex-direction: column;
-      align-items: center;
-      width: 100%;
-      display: none;
-      margin-top: 1rem;
-    }
-    
-    nav ul li {
-      margin: 0;
-      width: 100%;
-      text-align: left;
-      background-color: #000000;
-    }
-    nav ul li :hover{
-        background-color: #EB661B;
-        color: #fff;
-      }
-    nav ul li a:hover{
-    color: #fff;
-    text-decoration: none;
-    } 
-    nav ul li a {
-      padding: 1rem;
-      width: 100%;
-      display: block;
-      border-bottom: 1px solid #fff;
-    }
-    .menu-btn{
-        display: flex;
-        margin-left: 4vw;
-    }
-    
-  }
-  
+    font-size: large;
+    color: white;
+}
+.social_label:hover{
+    color: #eb631a;
+}
+ .fa {
+	 padding: 10px;
+	 font-size: 40px;
+	 width: 10px;
+	 text-align: left;
+	 text-decoration: none;
+	 border-radius: 50%;
+}
+ .fa:hover {
+	 opacity: 0.7;
+}
+ .fa-facebook {
+	 background: #eb631a;
+	 color: white;
+}
+ .fa-twitter {
+	 background: #eb631a;
+	 color: white;
+}
+ .fa-instagram {
+	 background: #eb631a;
+	 color: white;
+}
+ .fa-linkedin {
+	 background: #eb631a;
+	 color: white;
+}
+/* input field */
+ .form__field {
+	 font-family: inherit;
+	 width: 100%;
+	 border: 0;
+	 border-bottom: 2px solid #202020;
+	 outline: 0;
+	 font-size: 1.3rem;
+	 color: #fff;
+	 padding: 7px 0;
+	 background: transparent;
+	 transition: border-color 0.2s;
+}
+ .form__field::placeholder {
+	 color: white;
+}
+ .form__field:placeholder-shown ~ .form__label {
+	 font-size: 1.3rem;
+	 cursor: text;
+	 top: 20px;
+}
+ .form__label {
+	 position: absolute;
+	 top: 0;
+	 display: block;
+	 transition: 0.2s;
+	 font-size: 1rem;
+	 color: #000000;
+}
+ .form__field:focus {
+	 padding-bottom: 6px;
+	 font-weight: 700;
+	 border-width: 3px;
+	 border-image: linear-gradient(to right, #eb631a, #dfa585);
+	 border-image-slice: 1;
+}
+ .form__field:focus ~ .form__label {
+	 position: absolute;
+	 top: 0;
+	 display: block;
+	 transition: 0.2s;
+	 font-size: 1rem;
+	 color: #11998e;
+	 font-weight: 700;
+}
+/* reset input */
+ .form__field:required, .form__field:invalid {
+	 box-shadow: none;
+}
+/* Media Query for Responsive Nav */
+ @media screen and (max-width: 500px) {
+	/* collection section */
+	 nav {
+		 flex-direction: column;
+		 align-items: center;
+	}
+	 nav ul {
+		 flex-direction: column;
+		 align-items: center;
+		 width: 100%;
+		 display: none;
+		 margin-top: 1rem;
+	}
+	 nav ul li {
+		 margin: 0;
+		 width: 100%;
+		 text-align: left;
+		 background-color: #000;
+	}
+	 nav ul li :hover {
+		 background-color: #eb661b;
+		 color: #fff;
+	}
+	 nav ul li a:hover {
+		 color: #fff;
+		 text-decoration: none;
+	}
+	 nav ul:hover li a {
+		 opacity: 0.4;
+		 filter: blur(2px);
+	}
+	 nav ul li a:hover {
+		 position: relative;
+		 color: #fff;
+		 transform: scale(1);
+		 opacity: 1;
+		 filter: blur(0);
+	}
+	 nav ul li a {
+		 padding: 1rem;
+		 width: 100%;
+		 display: block;
+		 border-bottom: 1px solid #fff;
+	}
+	 .menu-btn {
+		 display: flex;
+		 margin-left: 4vw;
+	}
+	 .banner-section .slogan {
+		 font-size: 50px;
+	}
+	 nav .logo-img {
+		 width: 20vw;
+		 height: 10vh;
+	}
+	 .collection {
+		 padding: 1vh 2vh;
+		 display: flex;
+		 justify-content: center;
+		 height: 17vh;
+		 gap: 0.5rem;
+	}
+	 .collection_card {
+		 flex: 1;
+		 border-radius: 1rem;
+		 background-position: center;
+		 background-repeat: no-repeat;
+		 background-size: 100% 100%;
+		 transition: all 0.8s cubic-bezier(0.25, 0.4, 0.45, 1.4);
+	}
+	 .collection_card:hover {
+		 flex: 5;
+		 transform: scale(1.1);
+	}
+	 .collection_card:hover h1 {
+		 color: #000;
+		 background-color: #fff d5;
+		 margin-left: 1vw;
+	}
+    .footer-section {
+        flex-direction: column;
+        padding: 0 3vw;
+        
+   }
+   .app_download-img{
+    width: 20vw;
+    height: 15vh;
+    margin: 1vh;
+}
+}
+ 

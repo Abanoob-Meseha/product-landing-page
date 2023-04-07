@@ -1,0 +1,336 @@
+/* Google fonts used (Alkatra - Kanit) */
+@import url('https://fonts.googleapis.com/css2?family=Alkatra&family=Kanit&family=Varela+Round&display=swap');
+
+body{
+    background-color: #000000;
+    color: white;
+    font-family:  'Kanit','Alkatra' ;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #31313100;
+    color: #fff;
+    padding: 0% 1vw;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+  }
+  
+  .scrolled {
+    background-color: rgba(0, 0, 0, 0.699);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.295); /* optional: add a shadow */
+  }
+  
+  nav label {
+    font-size: 2rem;
+    cursor: pointer;
+  }
+  
+  nav ul {
+    display: flex;
+    list-style: none;
+    align-items: center;
+    margin: 0 2vw;
+    padding: 0;
+    font-size: larger;
+  }
+  
+  nav .logo-img{
+    width: 8vw;
+    height: 10vh;
+  }
+  nav .nav-logo{
+    display: flex;
+    align-items: center;
+  }
+  nav .nav-logo .logo-label{
+    font-family: 'Varela Round';
+    padding: 0%;
+    margin: 0%;
+  }
+  nav ul li {
+    margin-left: 1rem;
+  }
+  
+  nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    transition: 1s;
+  }
+  nav ul:hover li a{
+    opacity:0.2;
+    filter:blur(5px);
+  }
+  nav ul li a:hover{
+    
+    position:relative;
+    color: #EB661B;
+    transform:scale(2);
+    opacity:1;
+    filter:blur(0);
+  }
+  .btn {
+    -webkit-border-radius: 28;
+    -moz-border-radius: 28;
+    border-radius: 28px;
+    font-family: Arial;
+    color: #ffffff;
+    font-size: 20px;
+    background: #eb631a;
+    padding: 10px 20px 10px 20px;
+    text-decoration: none;
+  }
+  
+  .btn:hover {
+    background: #fa691b;
+    text-decoration: none;
+  }
+  .menu-btn{
+    display: none;
+    margin-right: 1vw;
+  }
+
+  /* banner section */
+  .banner-section{
+    margin-top: 10vh;
+    text-align: center;
+  }
+  .banner-section .slogan{
+    font-size: 80px;
+    font-weight: bolder;
+    color: #EB661B;
+    margin: 3vh auto 0vh;
+  }
+  .banner-img{
+    width: 50%;
+  }
+  /* collection section */
+  .collection{
+    padding: 1vh 5vh;
+    display: flex;
+    justify-content: center;
+    height: 50vh;
+    gap: 1rem;
+  }
+  .collection_card{
+    flex: 1;
+    border-radius: 1rem;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: auto 100%;
+    transition: all .8s cubic-bezier(.25,.4,.45,1.4);
+  }
+  .collection_card h1{
+    width: max-content;
+    color: #EB661B;
+    font-weight: bolder;
+    background-color: #3a3a3ac5;
+    
+  }
+  .collection_card:hover{
+    flex: 5;
+    transform:scale(1.1);
+  }
+  .collection_card:hover h1{
+    color: #000000;
+    background-color: #ffffffd5;
+    margin-left: 8vw;
+  }
+  /* video section */
+  .bracelet_video{
+    width: 90vw;
+    height: 60vh;
+  }
+  /* footer */
+  footer{
+    text-align: center;
+    background-color: #EB661B;
+    margin-bottom: auto 0 0 0;
+    font-size: medium;
+    margin-bottom: -3vh;
+    
+  }
+  .footer-section{
+    display: flex;
+    justify-content: space-around;
+  }
+  .fa {
+    padding: 10px;
+    font-size: 30px;
+    width: 10px;
+    text-align: start;
+    text-decoration: none;
+    margin: 2px 2px;
+    border-radius: 50%;
+  }
+  
+  .fa:hover {
+      opacity: 0.7;
+  }
+  .fa-facebook {
+    background: #3B5998;
+    color: white;
+  }
+  
+  .fa-twitter {
+    background: #55ACEE;
+    color: white;
+  }
+  .fa-instagram {
+    background: #125688;
+    color: white;
+  }
+  .fa-linkedin {
+    background: #007bb5;
+    color: white;
+  }  
+
+  /* input field */
+  $primary: #11998e;
+  $secondary: #38ef7d;
+  $white: #fff;
+  $gray: #9b9b9b;
+  .form__field {
+    font-family: inherit;
+    width: 100%;
+    border: 0;
+    border-bottom: 2px solid $gray;
+    outline: 0;
+    font-size: 1.3rem;
+    color: $white;
+    padding: 7px 0;
+    background: transparent;
+    transition: border-color 0.2s;
+  
+    &::placeholder {
+      color: transparent;
+    }
+  
+    &:placeholder-shown ~ .form__label {
+      font-size: 1.3rem;
+      cursor: text;
+      top: 20px;
+    }
+  }
+  
+  .form__label {
+    position: absolute;
+    top: 0;
+    display: block;
+    transition: 0.2s;
+    font-size: 1rem;
+    color: $gray;
+  }
+  
+  .form__field:focus {
+    ~ .form__label {
+      position: absolute;
+      top: 0;
+      display: block;
+      transition: 0.2s;
+      font-size: 1rem;
+      color: $primary;
+      font-weight:700;    
+    }
+    padding-bottom: 6px;  
+    font-weight: 700;
+    border-width: 3px;
+    border-image: linear-gradient(to right, $primary,$secondary);
+    border-image-slice: 1;
+  }
+  /* reset input */
+  .form__field{
+    &:required,&:invalid { box-shadow:none; }
+  }
+  /* Media Query for Responsive Nav */
+  @media screen and (max-width: 500px) {
+    nav {
+      flex-direction: column;
+      align-items: center;
+    }
+      
+    nav ul {
+      flex-direction: column;
+      align-items: center;
+      width: 100%;
+      display: none;
+      margin-top: 1rem;
+    }
+    
+    nav ul li {
+      margin: 0;
+      width: 100%;
+      text-align: left;
+      background-color: #000000;
+    }
+    nav ul li :hover{
+        background-color: #EB661B;
+        color: #fff;
+      }
+    nav ul li a:hover{
+    color: #fff;
+    text-decoration: none;
+    } 
+    nav ul:hover li a{
+      opacity:0.4;
+      filter:blur(2px);
+    }
+    nav ul li a:hover{
+      position:relative;
+      color: #fff;
+      transform:scale(1);
+      opacity:1;
+      filter:blur(0);
+    }
+    nav ul li a {
+      padding: 1rem;
+      width: 100%;
+      display: block;
+      border-bottom: 1px solid #fff;
+    }
+    .menu-btn{
+        display: flex;
+        margin-left: 4vw;
+    }
+    .banner-section .slogan{
+      font-size: 50px;
+    }
+    nav .logo-img{
+      width: 20vw;
+      height: 10vh;
+    }
+    /* collection section */
+  .collection{
+    padding: 1vh 2vh;
+    display: flex;
+    justify-content: center;
+    height: 17vh;
+    gap: 0.5rem;
+  }
+  .collection_card{
+    flex: 1;
+    border-radius: 1rem;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    transition: all .8s cubic-bezier(.25,.4,.45,1.4);
+  }
+  .collection_card:hover{
+    flex: 5;
+    transform:scale(1.1);
+  }
+  .collection_card:hover h1{
+    color: #000000;
+    background-color: #ffffffd5;
+    margin-left: 1vw;
+  }
+  }
+  
